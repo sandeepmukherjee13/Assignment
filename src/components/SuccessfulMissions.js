@@ -6,7 +6,11 @@ const SuccessFullMissions = () => {
   const missionSuccessful = totalData.filter(
     (item) => item.successful === true
   );
-  return <PieChart data={missionSuccessful} />;
+  return (
+    <>
+      <PieChart data={missionSuccessful} />
+    </>
+  );
 };
 
 export default SuccessFullMissions;
